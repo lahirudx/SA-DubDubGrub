@@ -14,7 +14,7 @@ struct AppTabView: View {
                 .tabItem {
                     Label("Map", systemImage: "map")
                 }
-
+            
             LocationListView()
                 .tabItem {
                     Label("Locations", systemImage: "building")
@@ -22,7 +22,7 @@ struct AppTabView: View {
             
             ProfileView()
                 .tabItem {
-                    Label("Map", systemImage: "person")
+                    Label("Profile", systemImage: "person")
                 }
         }
         .accentColor(.brandPrimary)

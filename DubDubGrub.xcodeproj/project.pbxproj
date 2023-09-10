@@ -15,6 +15,7 @@
 		521097C22AACAD15002E2C74 /* LocationMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 521097C12AACAD15002E2C74 /* LocationMapView.swift */; };
 		521097C42AACAD2D002E2C74 /* LocationListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 521097C32AACAD2D002E2C74 /* LocationListView.swift */; };
 		521097C62AACAD43002E2C74 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 521097C52AACAD43002E2C74 /* ProfileView.swift */; };
+		52BB30CA2AAD882A00F6D7C7 /* LocationDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52BB30C92AAD882A00F6D7C7 /* LocationDetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		521097C12AACAD15002E2C74 /* LocationMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationMapView.swift; sourceTree = "<group>"; };
 		521097C32AACAD2D002E2C74 /* LocationListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationListView.swift; sourceTree = "<group>"; };
 		521097C52AACAD43002E2C74 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		52BB30C92AAD882A00F6D7C7 /* LocationDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationDetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +70,7 @@
 				521097BF2AACAB76002E2C74 /* AppTabView.swift */,
 				521097C12AACAD15002E2C74 /* LocationMapView.swift */,
 				521097C32AACAD2D002E2C74 /* LocationListView.swift */,
+				52BB30C92AAD882A00F6D7C7 /* LocationDetailView.swift */,
 				521097C52AACAD43002E2C74 /* ProfileView.swift */,
 			);
 			path = DubDubGrub;
@@ -154,6 +157,7 @@
 				521097AF2AACA42C002E2C74 /* DubDubGrubApp.swift in Sources */,
 				521097C22AACAD15002E2C74 /* LocationMapView.swift in Sources */,
 				521097C42AACAD2D002E2C74 /* LocationListView.swift in Sources */,
+				52BB30CA2AAD882A00F6D7C7 /* LocationDetailView.swift in Sources */,
 				521097C02AACAB76002E2C74 /* AppTabView.swift in Sources */,
 				521097C62AACAD43002E2C74 /* ProfileView.swift in Sources */,
 				521097BE2AACA9B5002E2C74 /* Color+Ext.swift in Sources */,
