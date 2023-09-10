@@ -17,33 +17,23 @@ struct ProfileView: View {
     var body: some View {
         VStack {
             ZStack {
-                RoundedRectangle(cornerRadius: 20)
-                    .foregroundColor(Color(.secondarySystemBackground))
-                    .padding(.horizontal)
-                    .frame(height: 120)
+                NameBackgroundView()
                 
                 HStack {
                     ZStack {
                         AvatarView(size: 84)
                         
-                        Image(systemName: "square.and.pencil")
-                            .font(.system(size: 16))
-                            .foregroundColor(.white)
-                            .offset(y: 30)
+                        EditImage()
                         
                         
                     }
                     
                     VStack(spacing: 1) {
                         TextField("First Name", text: $firstName)
-                            .font(.system(size: 32, weight: .bold))
-                            .lineLimit(1)
-                            .minimumScaleFactor(0.75)
+                            .profileNameTextStyle()
                         
                         TextField("Last Name", text: $lastName)
-                            .font(.system(size: 32, weight: .bold))
-                            .lineLimit(1)
-                            .minimumScaleFactor(0.75)
+                            .profileNameTextStyle()
                         
                         TextField("Company Name", text: $companyName)
                     }
@@ -52,21 +42,12 @@ struct ProfileView: View {
             }
             
             VStack(alignment: .leading, spacing: 8) {
-                Text("Bio: ")
-                    .font(.callout)
-                    .foregroundColor(.secondary)
-                +
-                Text("\(100 - bio.count)")
-                    .font(.callout)
-                    .bold()
-                    .foregroundColor(bio.count <= 100 ?  .brandPrimary : Color(.systemPink))
-                +
-                Text(" characters remaining")
-                    .font(.callout)
-                    .foregroundColor(.secondary)
+                
+                CharactersRemainView(currentCount: bio.count)
                 
                 TextEditor(text: $bio)
                     .frame(height: 100)
+                    .padding(8)
                     .overlay {
                         RoundedRectangle(cornerRadius: 8)
                             .stroke(.secondary, lineWidth: 1)
@@ -79,12 +60,7 @@ struct ProfileView: View {
             Button {
                 
             } label: {
-                Text("Create Profile")
-                    .bold()
-                    .frame(width: 280, height: 44)
-                    .background(Color.brandPrimary)
-                    .foregroundColor(.white)
-                    .cornerRadius(8)
+                DDGButton(title: "Create Profile")
             }
 
         }
@@ -97,5 +73,43 @@ struct ProfileView_Previews: PreviewProvider {
         NavigationView {
             ProfileView()
         }
+    }
+}
+
+struct NameBackgroundView: View {
+    var body: some View {
+        RoundedRectangle(cornerRadius: 20)
+            .foregroundColor(Color(.secondarySystemBackground))
+            .padding(.horizontal)
+            .frame(height: 120)
+    }
+}
+
+struct EditImage: View {
+    var body: some View {
+        Image(systemName: "square.and.pencil")
+            .font(.system(size: 16))
+            .foregroundColor(.white)
+            .offset(y: 30)
+    }
+}
+
+struct CharactersRemainView: View {
+    
+    let currentCount: Int
+    
+    var body: some View {
+        Text("Bio: ")
+            .font(.callout)
+            .foregroundColor(.secondary)
+        +
+        Text("\(100 - currentCount)")
+            .font(.callout)
+            .bold()
+            .foregroundColor(currentCount <= 100 ?  .brandPrimary : Color(.systemPink))
+        +
+        Text(" characters remaining")
+            .font(.callout)
+            .foregroundColor(.secondary)
     }
 }

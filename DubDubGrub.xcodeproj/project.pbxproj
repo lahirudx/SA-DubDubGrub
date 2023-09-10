@@ -16,6 +16,11 @@
 		521097C42AACAD2D002E2C74 /* LocationListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 521097C32AACAD2D002E2C74 /* LocationListView.swift */; };
 		521097C62AACAD43002E2C74 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 521097C52AACAD43002E2C74 /* ProfileView.swift */; };
 		52BB30CA2AAD882A00F6D7C7 /* LocationDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52BB30C92AAD882A00F6D7C7 /* LocationDetailView.swift */; };
+		52BB30CC2AADE71400F6D7C7 /* LocationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52BB30CB2AADE71300F6D7C7 /* LocationCell.swift */; };
+		52BB30CE2AADE73200F6D7C7 /* AvatarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52BB30CD2AADE73200F6D7C7 /* AvatarView.swift */; };
+		52BB30D02AADEA7200F6D7C7 /* CustomModifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52BB30CF2AADEA7200F6D7C7 /* CustomModifiers.swift */; };
+		52BB30D22AADEA9E00F6D7C7 /* View+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52BB30D12AADEA9E00F6D7C7 /* View+Ext.swift */; };
+		52BB30D42AADED6C00F6D7C7 /* DDGButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52BB30D32AADED6C00F6D7C7 /* DDGButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +35,11 @@
 		521097C32AACAD2D002E2C74 /* LocationListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationListView.swift; sourceTree = "<group>"; };
 		521097C52AACAD43002E2C74 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		52BB30C92AAD882A00F6D7C7 /* LocationDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationDetailView.swift; sourceTree = "<group>"; };
+		52BB30CB2AADE71300F6D7C7 /* LocationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationCell.swift; sourceTree = "<group>"; };
+		52BB30CD2AADE73200F6D7C7 /* AvatarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarView.swift; sourceTree = "<group>"; };
+		52BB30CF2AADEA7200F6D7C7 /* CustomModifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomModifiers.swift; sourceTree = "<group>"; };
+		52BB30D12AADEA9E00F6D7C7 /* View+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Ext.swift"; sourceTree = "<group>"; };
+		52BB30D32AADED6C00F6D7C7 /* DDGButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DDGButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,16 +72,13 @@
 		521097AD2AACA42C002E2C74 /* DubDubGrub */ = {
 			isa = PBXGroup;
 			children = (
+				52BB30D62AADF43D00F6D7C7 /* Views */,
+				52BB30D52AADF43500F6D7C7 /* Extensions */,
 				521097BC2AACA810002E2C74 /* DubDubGrub.entitlements */,
 				521097AE2AACA42C002E2C74 /* DubDubGrubApp.swift */,
 				521097B22AACA42E002E2C74 /* Assets.xcassets */,
 				521097B42AACA42E002E2C74 /* Preview Content */,
-				521097BD2AACA9B5002E2C74 /* Color+Ext.swift */,
-				521097BF2AACAB76002E2C74 /* AppTabView.swift */,
-				521097C12AACAD15002E2C74 /* LocationMapView.swift */,
-				521097C32AACAD2D002E2C74 /* LocationListView.swift */,
-				52BB30C92AAD882A00F6D7C7 /* LocationDetailView.swift */,
-				521097C52AACAD43002E2C74 /* ProfileView.swift */,
+				52BB30CF2AADEA7200F6D7C7 /* CustomModifiers.swift */,
 			);
 			path = DubDubGrub;
 			sourceTree = "<group>";
@@ -82,6 +89,54 @@
 				521097B52AACA42E002E2C74 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		52BB30D52AADF43500F6D7C7 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				521097BD2AACA9B5002E2C74 /* Color+Ext.swift */,
+				52BB30D12AADEA9E00F6D7C7 /* View+Ext.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		52BB30D62AADF43D00F6D7C7 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				52BB30D92AADF4A900F6D7C7 /* Cells */,
+				52BB30D82AADF4A100F6D7C7 /* CustomViews */,
+				52BB30D72AADF45600F6D7C7 /* Screens */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		52BB30D72AADF45600F6D7C7 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				521097BF2AACAB76002E2C74 /* AppTabView.swift */,
+				521097C12AACAD15002E2C74 /* LocationMapView.swift */,
+				521097C32AACAD2D002E2C74 /* LocationListView.swift */,
+				52BB30C92AAD882A00F6D7C7 /* LocationDetailView.swift */,
+				521097C52AACAD43002E2C74 /* ProfileView.swift */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		52BB30D82AADF4A100F6D7C7 /* CustomViews */ = {
+			isa = PBXGroup;
+			children = (
+				52BB30CD2AADE73200F6D7C7 /* AvatarView.swift */,
+				52BB30D32AADED6C00F6D7C7 /* DDGButton.swift */,
+			);
+			path = CustomViews;
+			sourceTree = "<group>";
+		};
+		52BB30D92AADF4A900F6D7C7 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				52BB30CB2AADE71300F6D7C7 /* LocationCell.swift */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -155,11 +210,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				521097AF2AACA42C002E2C74 /* DubDubGrubApp.swift in Sources */,
+				52BB30D02AADEA7200F6D7C7 /* CustomModifiers.swift in Sources */,
 				521097C22AACAD15002E2C74 /* LocationMapView.swift in Sources */,
 				521097C42AACAD2D002E2C74 /* LocationListView.swift in Sources */,
 				52BB30CA2AAD882A00F6D7C7 /* LocationDetailView.swift in Sources */,
 				521097C02AACAB76002E2C74 /* AppTabView.swift in Sources */,
 				521097C62AACAD43002E2C74 /* ProfileView.swift in Sources */,
+				52BB30D22AADEA9E00F6D7C7 /* View+Ext.swift in Sources */,
+				52BB30CC2AADE71400F6D7C7 /* LocationCell.swift in Sources */,
+				52BB30D42AADED6C00F6D7C7 /* DDGButton.swift in Sources */,
+				52BB30CE2AADE73200F6D7C7 /* AvatarView.swift in Sources */,
 				521097BE2AACA9B5002E2C74 /* Color+Ext.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
