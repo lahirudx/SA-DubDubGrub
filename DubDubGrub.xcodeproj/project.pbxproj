@@ -15,6 +15,11 @@
 		521097C22AACAD15002E2C74 /* LocationMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 521097C12AACAD15002E2C74 /* LocationMapView.swift */; };
 		521097C42AACAD2D002E2C74 /* LocationListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 521097C32AACAD2D002E2C74 /* LocationListView.swift */; };
 		521097C62AACAD43002E2C74 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 521097C52AACAD43002E2C74 /* ProfileView.swift */; };
+		528B80F82AB0AC9500BB34FC /* DDGLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 528B80F72AB0AC9500BB34FC /* DDGLocation.swift */; };
+		528B80FA2AB0B9CB00BB34FC /* DDGProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 528B80F92AB0B9CB00BB34FC /* DDGProfile.swift */; };
+		528B80FC2AB0BF2600BB34FC /* MockData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 528B80FB2AB0BF2600BB34FC /* MockData.swift */; };
+		528B80FF2AB1524F00BB34FC /* CloudKitManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 528B80FE2AB1524F00BB34FC /* CloudKitManager.swift */; };
+		528B81012AB157CE00BB34FC /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 528B81002AB157CE00BB34FC /* Constants.swift */; };
 		52BB30CA2AAD882A00F6D7C7 /* LocationDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52BB30C92AAD882A00F6D7C7 /* LocationDetailView.swift */; };
 		52BB30CC2AADE71400F6D7C7 /* LocationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52BB30CB2AADE71300F6D7C7 /* LocationCell.swift */; };
 		52BB30CE2AADE73200F6D7C7 /* AvatarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52BB30CD2AADE73200F6D7C7 /* AvatarView.swift */; };
@@ -34,6 +39,11 @@
 		521097C12AACAD15002E2C74 /* LocationMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationMapView.swift; sourceTree = "<group>"; };
 		521097C32AACAD2D002E2C74 /* LocationListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationListView.swift; sourceTree = "<group>"; };
 		521097C52AACAD43002E2C74 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		528B80F72AB0AC9500BB34FC /* DDGLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DDGLocation.swift; sourceTree = "<group>"; };
+		528B80F92AB0B9CB00BB34FC /* DDGProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DDGProfile.swift; sourceTree = "<group>"; };
+		528B80FB2AB0BF2600BB34FC /* MockData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockData.swift; sourceTree = "<group>"; };
+		528B80FE2AB1524F00BB34FC /* CloudKitManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudKitManager.swift; sourceTree = "<group>"; };
+		528B81002AB157CE00BB34FC /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		52BB30C92AAD882A00F6D7C7 /* LocationDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationDetailView.swift; sourceTree = "<group>"; };
 		52BB30CB2AADE71300F6D7C7 /* LocationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationCell.swift; sourceTree = "<group>"; };
 		52BB30CD2AADE73200F6D7C7 /* AvatarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarView.swift; sourceTree = "<group>"; };
@@ -72,8 +82,9 @@
 		521097AD2AACA42C002E2C74 /* DubDubGrub */ = {
 			isa = PBXGroup;
 			children = (
+				528B80FD2AB1521000BB34FC /* Utilities */,
+				528B80F62AB0AC8000BB34FC /* Model */,
 				52BB30D62AADF43D00F6D7C7 /* Views */,
-				52BB30D52AADF43500F6D7C7 /* Extensions */,
 				521097BC2AACA810002E2C74 /* DubDubGrub.entitlements */,
 				521097AE2AACA42C002E2C74 /* DubDubGrubApp.swift */,
 				521097B22AACA42E002E2C74 /* Assets.xcassets */,
@@ -89,6 +100,26 @@
 				521097B52AACA42E002E2C74 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		528B80F62AB0AC8000BB34FC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				528B80F72AB0AC9500BB34FC /* DDGLocation.swift */,
+				528B80F92AB0B9CB00BB34FC /* DDGProfile.swift */,
+				528B80FB2AB0BF2600BB34FC /* MockData.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		528B80FD2AB1521000BB34FC /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				52BB30D52AADF43500F6D7C7 /* Extensions */,
+				528B80FE2AB1524F00BB34FC /* CloudKitManager.swift */,
+				528B81002AB157CE00BB34FC /* Constants.swift */,
+			);
+			path = Utilities;
 			sourceTree = "<group>";
 		};
 		52BB30D52AADF43500F6D7C7 /* Extensions */ = {
@@ -210,12 +241,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				521097AF2AACA42C002E2C74 /* DubDubGrubApp.swift in Sources */,
+				528B81012AB157CE00BB34FC /* Constants.swift in Sources */,
 				52BB30D02AADEA7200F6D7C7 /* CustomModifiers.swift in Sources */,
 				521097C22AACAD15002E2C74 /* LocationMapView.swift in Sources */,
 				521097C42AACAD2D002E2C74 /* LocationListView.swift in Sources */,
+				528B80FC2AB0BF2600BB34FC /* MockData.swift in Sources */,
 				52BB30CA2AAD882A00F6D7C7 /* LocationDetailView.swift in Sources */,
+				528B80FA2AB0B9CB00BB34FC /* DDGProfile.swift in Sources */,
+				528B80F82AB0AC9500BB34FC /* DDGLocation.swift in Sources */,
 				521097C02AACAB76002E2C74 /* AppTabView.swift in Sources */,
 				521097C62AACAD43002E2C74 /* ProfileView.swift in Sources */,
+				528B80FF2AB1524F00BB34FC /* CloudKitManager.swift in Sources */,
 				52BB30D22AADEA9E00F6D7C7 /* View+Ext.swift in Sources */,
 				52BB30CC2AADE71400F6D7C7 /* LocationCell.swift in Sources */,
 				52BB30D42AADED6C00F6D7C7 /* DDGButton.swift in Sources */,
@@ -347,6 +383,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = DubDubGrub/DubDubGrub.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"DubDubGrub/Preview Content\"";
@@ -365,6 +402,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.lahirudx.DubDubGrub;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -377,6 +415,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = DubDubGrub/DubDubGrub.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"DubDubGrub/Preview Content\"";
@@ -395,6 +434,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.lahirudx.DubDubGrub;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
