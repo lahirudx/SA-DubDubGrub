@@ -26,6 +26,9 @@
 		52BB30D02AADEA7200F6D7C7 /* CustomModifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52BB30CF2AADEA7200F6D7C7 /* CustomModifiers.swift */; };
 		52BB30D22AADEA9E00F6D7C7 /* View+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52BB30D12AADEA9E00F6D7C7 /* View+Ext.swift */; };
 		52BB30D42AADED6C00F6D7C7 /* DDGButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52BB30D32AADED6C00F6D7C7 /* DDGButton.swift */; };
+		52DF54742AB2245200F15119 /* CKRecord+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52DF54732AB2245200F15119 /* CKRecord+Ext.swift */; };
+		52DF54762AB295BE00F15119 /* AlertItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52DF54752AB295BE00F15119 /* AlertItem.swift */; };
+		52DF54792AB29DB300F15119 /* LocationMapViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52DF54782AB29DB300F15119 /* LocationMapViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +53,9 @@
 		52BB30CF2AADEA7200F6D7C7 /* CustomModifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomModifiers.swift; sourceTree = "<group>"; };
 		52BB30D12AADEA9E00F6D7C7 /* View+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Ext.swift"; sourceTree = "<group>"; };
 		52BB30D32AADED6C00F6D7C7 /* DDGButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DDGButton.swift; sourceTree = "<group>"; };
+		52DF54732AB2245200F15119 /* CKRecord+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CKRecord+Ext.swift"; sourceTree = "<group>"; };
+		52DF54752AB295BE00F15119 /* AlertItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertItem.swift; sourceTree = "<group>"; };
+		52DF54782AB29DB300F15119 /* LocationMapViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationMapViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,6 +124,7 @@
 				52BB30D52AADF43500F6D7C7 /* Extensions */,
 				528B80FE2AB1524F00BB34FC /* CloudKitManager.swift */,
 				528B81002AB157CE00BB34FC /* Constants.swift */,
+				52DF54752AB295BE00F15119 /* AlertItem.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -127,6 +134,7 @@
 			children = (
 				521097BD2AACA9B5002E2C74 /* Color+Ext.swift */,
 				52BB30D12AADEA9E00F6D7C7 /* View+Ext.swift */,
+				52DF54732AB2245200F15119 /* CKRecord+Ext.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -144,8 +152,8 @@
 		52BB30D72AADF45600F6D7C7 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				52DF54772AB29D9400F15119 /* LocationMapView */,
 				521097BF2AACAB76002E2C74 /* AppTabView.swift */,
-				521097C12AACAD15002E2C74 /* LocationMapView.swift */,
 				521097C32AACAD2D002E2C74 /* LocationListView.swift */,
 				52BB30C92AAD882A00F6D7C7 /* LocationDetailView.swift */,
 				521097C52AACAD43002E2C74 /* ProfileView.swift */,
@@ -168,6 +176,15 @@
 				52BB30CB2AADE71300F6D7C7 /* LocationCell.swift */,
 			);
 			path = Cells;
+			sourceTree = "<group>";
+		};
+		52DF54772AB29D9400F15119 /* LocationMapView */ = {
+			isa = PBXGroup;
+			children = (
+				521097C12AACAD15002E2C74 /* LocationMapView.swift */,
+				52DF54782AB29DB300F15119 /* LocationMapViewModel.swift */,
+			);
+			path = LocationMapView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -244,6 +261,7 @@
 				528B81012AB157CE00BB34FC /* Constants.swift in Sources */,
 				52BB30D02AADEA7200F6D7C7 /* CustomModifiers.swift in Sources */,
 				521097C22AACAD15002E2C74 /* LocationMapView.swift in Sources */,
+				52DF54792AB29DB300F15119 /* LocationMapViewModel.swift in Sources */,
 				521097C42AACAD2D002E2C74 /* LocationListView.swift in Sources */,
 				528B80FC2AB0BF2600BB34FC /* MockData.swift in Sources */,
 				52BB30CA2AAD882A00F6D7C7 /* LocationDetailView.swift in Sources */,
@@ -252,8 +270,10 @@
 				521097C02AACAB76002E2C74 /* AppTabView.swift in Sources */,
 				521097C62AACAD43002E2C74 /* ProfileView.swift in Sources */,
 				528B80FF2AB1524F00BB34FC /* CloudKitManager.swift in Sources */,
+				52DF54762AB295BE00F15119 /* AlertItem.swift in Sources */,
 				52BB30D22AADEA9E00F6D7C7 /* View+Ext.swift in Sources */,
 				52BB30CC2AADE71400F6D7C7 /* LocationCell.swift in Sources */,
+				52DF54742AB2245200F15119 /* CKRecord+Ext.swift in Sources */,
 				52BB30D42AADED6C00F6D7C7 /* DDGButton.swift in Sources */,
 				52BB30CE2AADE73200F6D7C7 /* AvatarView.swift in Sources */,
 				521097BE2AACA9B5002E2C74 /* Color+Ext.swift in Sources */,

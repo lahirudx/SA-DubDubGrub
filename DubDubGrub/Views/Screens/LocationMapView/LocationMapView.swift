@@ -10,11 +10,11 @@ import MapKit
 
 struct LocationMapView: View {
     
-    @State private var region = MKCoordinateRegion(center: CLLocationCoordinate2D(latitude: 37.331516, longitude: -121.891054), span: MKCoordinateSpan(latitudeDelta: 0.01, longitudeDelta: 0.01))
+    @StateObject private var vm = LocationMapViewModel()
     
     var body: some View {
         ZStack {
-            Map(coordinateRegion: $region)
+            Map(coordinateRegion: $vm.region)
                 .ignoresSafeArea()
             
             VStack {
@@ -23,15 +23,11 @@ struct LocationMapView: View {
                 Spacer()
             }
         }
+        .alert(item: $vm.alertItem, content: { alertItem in
+            Alert(title: alertItem.title, message: alertItem.message, dismissButton: alertItem.dismissButton)
+        })
         .onAppear {
-            CloudKitManger.getLocations { result in
-                switch result {
-                case .success(let locations):
-                    print(locations)
-                case .failure(let error):
-                    print(error.localizedDescription)
-                }
-            }
+            vm.getLocations()
         }
     }
 }
