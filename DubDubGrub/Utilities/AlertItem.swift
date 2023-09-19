@@ -24,4 +24,7 @@ struct AlertContext {
     static let locationDenied = AlertItem(title: Text("Location Denied"), message: Text("Dub Dub Grub does not have permission to access your location. To change that got to your phone's Settings > Dub Dub Grub > Location"), dismissButton: .default(Text("Ok")))
     
     static let locationDisabled = AlertItem(title: Text("Location Disabled"), message: Text("You phone's location services are disabled. To change that got to your phone's Settings> Privacy > Location Services"), dismissButton: .default(Text("Ok")))
+    
+    // MARK: - ProfileView Errors
+    static let invalidProfile = AlertItem(title: Text("Invalid Profile"), message: Text("all are fields are required as well as a profile photo. Your bio must be < 100 characters.\nPlease try again"), dismissButton: .default(Text("Ok")))
 }

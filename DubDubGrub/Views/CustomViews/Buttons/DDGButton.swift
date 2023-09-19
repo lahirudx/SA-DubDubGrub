@@ -18,7 +18,6 @@ struct DDGButton: View {
             .background(Color.brandPrimary)
             .foregroundColor(.white)
             .cornerRadius(8)
-            .padding()
     }
 }
 
